@@ -4,7 +4,7 @@
  * @Author: Li Jiaxin
  * @Date: 2021-09-08 21:21:11
  * @LastEditors: Li Jiaxin
- * @LastEditTime: 2021-09-14 19:33:18
+ * @LastEditTime: 2021-09-14 21:09:35
  */
 #include<iostream>
 #include<string>
@@ -128,12 +128,19 @@ using std::endl;
 // }
 
 
+// int main(){
+//     vector<int> v(10,32);
+//     for(auto it =v.begin(); it !=v.end();++it){
+//         *it = *it * 2;
+//     }
+//     for(auto i:v) 
+//         cout<<i<<" "<<endl;
+//     return 0;
+// }
+
 int main(){
-    vector<int> v(10,32);
-    for(auto it =v.begin(); it !=v.end();++it){
-        *it = *it * 2;
-    }
-    for(auto i:v) 
-        cout<<i<<" "<<endl;
+    short value = 32767;
+    value = value +5;
+    cout<<value<<endl;
     return 0;
-}
+}                                                                                                                                                              
