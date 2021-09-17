@@ -4,7 +4,7 @@
  * @Author: Li Jiaxin
  * @Date: 2021-09-08 21:21:11
  * @LastEditors: Li Jiaxin
- * @LastEditTime: 2021-09-14 21:09:35
+ * @LastEditTime: 2021-09-17 11:03:45
  */
 #include<iostream>
 #include<string>
@@ -138,9 +138,35 @@ using std::endl;
 //     return 0;
 // }
 
+// int main(){
+//     short value = 32767;
+//     value = value +5;
+//     cout<<value<<endl;
+//     return 0;
+// }     
+
+// int main(){
+//     const char ca[] = { 'h', 'e', 'l', 'l', 'o' };
+//     const char *cp = ca;
+//     while (*cp) {
+//     cout << *cp << endl;
+//     ++cp;
+// }
+//     return 0;
+// }
+#include<iostream>
+#include <cstring>
+using namespace std;
+
+const char s1[] = "hello";
+
+const char s2[] = "world";
+
 int main(){
-    short value = 32767;
-    value = value +5;
-    cout<<value<<endl;
+    char s3[1000];
+    
+    strcpy(s3,s1);
+    strcat(s3,s2);
+    cout<<s3<<endl;
     return 0;
-}                                                                                                                                                              
+}
