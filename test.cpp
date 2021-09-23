@@ -4,10 +4,10 @@
  * @Author: Li Jiaxin
  * @Date: 2021-09-08 21:21:11
  * @LastEditors: Li Jiaxin
- * @LastEditTime: 2021-09-17 17:29:41
+ * @LastEditTime: 2021-09-23 21:45:31
  */
-#include<iostream>
-#include<string>
+#include <iostream>
+#include <string>
 using namespace std;
 
 // int main(){
@@ -73,10 +73,10 @@ using namespace std;
 #include <string>
 #include <iostream>
 
-using std::vector;
-using std::string;
 using std::cout;
 using std::endl;
+using std::string;
+using std::vector;
 
 // void check_and_print(const vector<int>& vec)
 // {
@@ -127,13 +127,12 @@ using std::endl;
 // 	return 0;
 // }
 
-
 // int main(){
 //     vector<int> v(10,32);
 //     for(auto it =v.begin(); it !=v.end();++it){
 //         *it = *it * 2;
 //     }
-//     for(auto i:v) 
+//     for(auto i:v)
 //         cout<<i<<" "<<endl;
 //     return 0;
 // }
@@ -143,7 +142,7 @@ using std::endl;
 //     value = value +5;
 //     cout<<value<<endl;
 //     return 0;
-// }     
+// }
 
 // int main(){
 //     const char ca[] = { 'h', 'e', 'l', 'l', 'o' };
@@ -154,7 +153,7 @@ using std::endl;
 // }
 //     return 0;
 // }
-#include<iostream>
+#include <iostream>
 #include <cstring>
 using namespace std;
 
@@ -162,29 +161,28 @@ const char s1[] = "hello";
 
 const char s2[] = "world";
 
-int main(){
-    char s3[1000];
-    
-    strcpy(s3,s1);
-    strcat(s3,s2);
-    cout<<s3<<endl;
-    cout<<s1<<endl;
-    cout<<s2<<endl;
-    // if(s1<s2){
-    //     cout<<s1<<endl;
-    // }
-    cout<<typeid(s1).name()<<endl;
-    // int n = 100;
-    // const type_info &nInfo = typeid(n);
-    // cout<<nInfo.name()<<endl;
-    
-    
-    // string str = "lol",*p = &str;
-    // cout<<*p << endl;
-    const type_info &charInfo = typeid(char);
-    cout<<charInfo.name()<<endl;
-    return 0;
-}
+// int main(){
+//     char s3[1000];
+
+//     strcpy(s3,s1);
+//     strcat(s3,s2);
+//     cout<<s3<<endl;
+//     cout<<s1<<endl;
+//     cout<<s2<<endl;
+//     // if(s1<s2){
+//     //     cout<<s1<<endl;
+//     // }
+//     cout<<typeid(s1).name()<<endl;
+//     // int n = 100;
+//     // const type_info &nInfo = typeid(n);
+//     // cout<<nInfo.name()<<endl;
+
+//     // string str = "lol",*p = &str;
+//     // cout<<*p << endl;
+//     const type_info &charInfo = typeid(char);
+//     cout<<charInfo.name()<<endl;
+//     return 0;
+// }
 
 // int main(){
 //     int x[10]={0,1,2,3,4,5,6,7,8,9};
@@ -193,3 +191,18 @@ int main(){
 //     cout<<x<<endl;
 //     return 0;
 // }
+
+int main()
+{
+    // vector<int> t = {1,1,1};
+    // string s="adasdasdi";
+    // cout<<sizeof(s)<<endl;
+    // cout<<t.capacity()<<endl;
+    cout << sizeof(int) << endl;
+    cout << sizeof(char) << endl;
+    cout << sizeof(double) << endl;
+    cout << sizeof(float) << endl;
+    cout << sizeof(bool) << endl;
+    cout<<sizeof(int*)<<endl;
+    return 0;
+}
