@@ -4,7 +4,7 @@
  * @Author: Li Jiaxin
  * @Date: 2021-09-08 21:21:11
  * @LastEditors: Li Jiaxin
- * @LastEditTime: 2021-09-27 20:33:23
+ * @LastEditTime: 2021-10-24 19:34:46
  */
 #include <iostream>
 #include <string>
@@ -299,8 +299,22 @@ const char s2[] = "world";
 //     return 0;
 // }
 
+// int main(){
+//     unsigned short a ;
+//     short b;
+//     int max_val = INT_MAX;
+//     a =32768;
+//     b=a;
+//     // printf("%d %d\n",a,b);
+//     cout << sizeof( unsigned int) << endl;
+//     cout<<max_val << endl;
+//     cout<<max_val+1 << endl;
+//     return 0;
+// }
+
 int main(){
-    using str = string[10];
-    str& fun();
+    char* str = "hello";
+    cout<<*(str+4)<<endl;
     return 0;
+
 }
