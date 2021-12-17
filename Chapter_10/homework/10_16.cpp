@@ -23,9 +23,11 @@ void elimDups(vector<string> &words)
 void biggers(vector<string> &words, int sz)
 {
     elimDups(words);
-    // 按单词长度排序，长度相同维持字典序
+    // 按单词长度排序，长度相同维持字典序 ,从小到大
     stable_sort(words.begin(), words.end(), [](const string &a, const string &b)
                 { return a.size() < b.size(); });
+    for_each(words.begin(), words.end(), [](const string &a)
+             { cout << a << endl; });
     auto wc = find_if(words.begin(), words.end(), [sz](const string &a)
                       { return a.size() >= sz; });
     for_each(wc, words.end(), [](const string &a)
