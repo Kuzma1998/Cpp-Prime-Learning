@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "*.m": "matlab",
+        "initializer_list": "cpp",
+        "xutility": "cpp"
+    }
+}
