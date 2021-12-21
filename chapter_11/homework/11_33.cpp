@@ -21,7 +21,7 @@ void buildMap(ifstream& file,map<string, string>& Map);
 
 int main(){
     ifstream file("F:/OneDrive2/OneDrive - csu.edu.cn/C++learning/C++prime/data/transform_rules.txt");
-    ifstream trans_file("F:/OneDrive2/OneDrive - csu.edu.cn/C++learning/C++prime/data/transform_rules.txt");
+    ifstream trans_file("F:/OneDrive2/OneDrive - csu.edu.cn/C++learning/C++prime/data/for_transform.txt");
     map<string,string> Map;
     buildMap(file,Map);
     // cout<<Map["y"];
@@ -29,6 +29,9 @@ int main(){
     //     cout<<i.first<<" "<<i.second<<endl;
     // }
     vector<string> ans = word_transform(Map,trans_file);
+    for(auto i:ans){
+        cout<<i<<endl;
+    }
 
 }
 
@@ -44,22 +47,22 @@ vector<string> word_transform(map<string, string>& Map,ifstream& trans_file){
     
     vector<string> return_ans;
     string origin_text;
+    // stringstream stream;
     while(getline(trans_file,origin_text)){
         string word;
         string trans_text;
         // 按空格分割字符串
-        
-    //     for(auto word:origin_text){
-    //         if(word==' '){continue;} //
-    //         if(word.size()==1)
-
-    //         if(Map.find(word)){
-    //             trans_text += Map[word];
-    //         }else{
-    //             trans_text += word;
-    //         }
-    //     }
-    //     return_ans.push_back(trans_text);
-    // }
+        stringstream stream(origin_text);
+        while(stream>>word){
+            if(Map.count(word)){
+                trans_text += " ";
+                trans_text += Map[word];
+            }else{
+                trans_text += " ";
+                trans_text += word;
+            }
+        }
+        return_ans.push_back(trans_text);
+        }
     return return_ans;
 }
