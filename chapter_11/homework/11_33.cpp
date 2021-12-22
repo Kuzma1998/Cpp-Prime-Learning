@@ -20,7 +20,8 @@ void buildMap(ifstream& file,map<string, string>& Map);
 
 
 int main(){
-    ifstream file("F:/OneDrive2/OneDrive - csu.edu.cn/C++learning/C++prime/data/transform_rules.txt");
+    ifstream file("F:/OneDrive2/OneDrive - csu.edu.cn/C++learning/C++prime/data/transform_rules.txt"); 
+    //读取文件，file关联到文件
     ifstream trans_file("F:/OneDrive2/OneDrive - csu.edu.cn/C++learning/C++prime/data/for_transform.txt");
     map<string,string> Map;
     buildMap(file,Map);
@@ -38,7 +39,7 @@ int main(){
 void buildMap(ifstream& file,map<string, string>& Map){
     string key;
     string value;
-    while(file>>key&&getline(file,value)){ // 从file读取一行
+    while(file>>key&&getline(file,value)){ // 先读一个单词再从file读取一行
         Map[key] = value.erase(0,1);
     }
 }
@@ -52,7 +53,7 @@ vector<string> word_transform(map<string, string>& Map,ifstream& trans_file){
         string word;
         string trans_text;
         // 按空格分割字符串
-        stringstream stream(origin_text);
+        stringstream stream(origin_text);  // 一个句子绑定一个字符串流
         while(stream>>word){
             if(Map.count(word)){
                 trans_text += " ";
