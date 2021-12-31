@@ -39,6 +39,7 @@ public:
 //调用无参构造函数
 void test01() {
 	Person p; //调用无参构造函数
+	Person(); //匿名类
 }
 
 //调用有参的构造函数
@@ -59,13 +60,13 @@ void test02() {
 	Person p5 = p4; // Person p5 = Person(p4); 
 
 	//注意2：不能利用 拷贝构造函数 初始化匿名对象 编译器认为是对象声明
-	Person(p3); // 此代码错误
+	// Person(p3); // 此代码错误
 }
 
 int main() {
 
-	// test01();
-	test02();
+	test01();
+	// test02();
 
 	// system("pause");
 

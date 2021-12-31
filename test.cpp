@@ -3,8 +3,8 @@
  * @version: 
  * @Author: Li Jiaxin
  * @Date: 2021-09-08 21:21:11
- * @LastEditors: Li Jiaxin
- * @LastEditTime: 2021-10-24 19:34:46
+ * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2021-12-31 12:56:22
  */
 #include <iostream>
 #include <string>
@@ -312,9 +312,24 @@ const char s2[] = "world";
 //     return 0;
 // }
 
-int main(){
-    char* str = "hello";
-    cout<<*(str+4)<<endl;
-    return 0;
+// int main(){
+//     char* str = "hello";
+//     cout<<*(str+4)<<endl;
+//     return 0;
 
+// }
+
+class A{
+public:
+    int a;
+    A() = default;
+    A(int num): a(num) {}
+};
+
+int main(){
+    A obj;
+    cout<<obj.a<<endl; 
+    A obj2(3);
+    cout<<obj2.a<<endl; 
 }
+
