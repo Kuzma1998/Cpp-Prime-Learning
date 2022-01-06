@@ -108,9 +108,6 @@ g++ -S test.i // 预处理文件test.i生成test.s文件，汇编指令
 g++ -c test.s// 汇编，把汇编代码test.s汇编成二进制机器码test.o
 g++ test.o -o test.exe// 链接成为可执行文件
 ./test.exe // 执行可执行文件
-
-
-
 } 
 ```
 
