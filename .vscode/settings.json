@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     "files.associations": {
         "*.m": "matlab",
@@ -55,4 +56,52 @@
         "xhash": "cpp",
         "xtree": "cpp"
     }
+=======
+{
+    "files.associations": {
+        "*.m": "matlab",
+        "ostream": "cpp",
+        "iostream": "cpp",
+        "initializer_list": "cpp",
+        "cctype": "cpp",
+        "cmath": "cpp",
+        "cstddef": "cpp",
+        "cstdint": "cpp",
+        "cstdio": "cpp",
+        "cstdlib": "cpp",
+        "cstring": "cpp",
+        "cwchar": "cpp",
+        "exception": "cpp",
+        "ios": "cpp",
+        "iosfwd": "cpp",
+        "istream": "cpp",
+        "iterator": "cpp",
+        "limits": "cpp",
+        "memory": "cpp",
+        "new": "cpp",
+        "stdexcept": "cpp",
+        "streambuf": "cpp",
+        "string": "cpp",
+        "system_error": "cpp",
+        "tuple": "cpp",
+        "type_traits": "cpp",
+        "typeinfo": "cpp",
+        "utility": "cpp",
+        "vector": "cpp",
+        "xfacet": "cpp",
+        "xiosbase": "cpp",
+        "xlocale": "cpp",
+        "xlocinfo": "cpp",
+        "xlocnum": "cpp",
+        "xmemory": "cpp",
+        "xmemory0": "cpp",
+        "xstddef": "cpp",
+        "xstring": "cpp",
+        "xtr1common": "cpp",
+        "xutility": "cpp",
+        "fstream": "cpp",
+        "map": "cpp",
+        "unordered_map": "cpp"
+    }
+>>>>>>> 5e334f4a8f140df473eded85b601cf10e14e04fb
 }

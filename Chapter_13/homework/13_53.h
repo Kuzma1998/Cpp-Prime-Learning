@@ -14,4 +14,6 @@ public:
 private:
     string * ps;
     int i;
-};
+};
+
+#endif //
