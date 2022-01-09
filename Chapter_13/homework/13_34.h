@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 /*
  * @Description:
  * @code:
@@ -232,4 +232,4 @@ void swap(Folder&, Folder&);
 // };
 
 // void swap(Folder&, Folder&);
->>>>>>> 5e334f4a8f140df473eded85b601cf10e14e04fb
+

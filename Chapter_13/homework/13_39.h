@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 #ifndef ex13_39_h
 #define ex13_39_h
 
@@ -37,7 +37,7 @@ private:
 
 
 #endif
-=======
+
 #include<memory>
 #include<string>
 #include<utility>
@@ -75,4 +75,4 @@ public:
     string* begin() const {return elements;}
     string* end() const {return first_free;}
 };
->>>>>>> 5e334f4a8f140df473eded85b601cf10e14e04fb
+
