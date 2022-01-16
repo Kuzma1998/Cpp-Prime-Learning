@@ -16,6 +16,7 @@ int main(){
     size_t q = 15;
     double d = 0.88;
     Quote item1(bkn, price);
+    Bulk_quote it1;
     Bulk_quote item2(bkn, price,q,d);
     // print_total(cout,item1,10);
     print_total(cout,item2,18);

@@ -3,6 +3,7 @@
 #include "15_3.h"
 class Bulk_quote : public Quote
 {
+	// friend void f(Bulk_quote& b){return b.price;}
 public:
 	Bulk_quote() = default;
 	Bulk_quote(const std::string& b, double p, std::size_t q, double disc) :
@@ -14,6 +15,7 @@ public:
 private:
 	std::size_t min_qty = 0;
 	double      discount = 0.0;
+
 };
 
 double Bulk_quote::net_price(std::size_t n) const{
