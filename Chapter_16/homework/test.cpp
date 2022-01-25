@@ -63,7 +63,7 @@ int main() {
 	// test01();
 	// test02();
     Person p = Person();
-    Person p2;
+    Person p2(p);// ¿½±´£¬µÈÓÚPerson p2=p
 
 	// system("pause");
 

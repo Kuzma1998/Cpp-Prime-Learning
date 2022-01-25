@@ -4,10 +4,11 @@
  * @Author: Li Jiaxin
  * @Date: 2021-10-23 18:01:03
  * @LastEditors: Li Jiaxin
- * @LastEditTime: 2021-10-24 19:34:11
+ * @LastEditTime: 2022-01-25 10:09:29
  */
 #include<stdio.h>
 #include<iostream>
+#include<string>
 using namespace std;
 
 int main(){
@@ -24,8 +25,11 @@ int main(){
     //     printf("no\n");
     
     // return 0;
-    char* str = "hello";
-    cout<<*(str+4)<<endl;
+    // char* str = "hello";
+    // cout<<*(str+4)<<endl;
+    string s1 = "hello";
+    string s2(s1);
+    cout<<s2<<endl;
     return 0;
 
 }

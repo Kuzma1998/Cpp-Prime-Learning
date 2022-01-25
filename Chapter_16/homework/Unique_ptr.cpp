@@ -94,4 +94,30 @@ unique_pointer<T,D>::operator=(unique_pointer&& rhs) noexcept{
 }
 
 // std::nullptr_t assignment
-template<typename
+template<typename T, typename D>
+inline unique_pointer<T, D>&
+unique_pointer<T, D>::operator =(std::nullptr_t n) noexcept
+{
+	if (n == nullptr)
+	{
+		deleter(ptr);   ptr = nullptr;
+	}
+	return *this;
+}
+
+
+
+// unique_ptr置为空操作
+template<typename T, typename D>
+inline T*
+unique_pointer<T, D>::release()
+{
+	T* ret = ptr;
+	ptr = nullptr;
+	return ret;
+}
+
+
+
+
+#endif // UNIQUE_POINTER_H

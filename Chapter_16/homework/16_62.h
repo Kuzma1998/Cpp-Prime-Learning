@@ -38,6 +38,9 @@ public:
         is >> *this;
         cout << "Sales_data(std::istream &is) : Sales_data()" << endl;
     }
+    Sales_data(const Sales_data &s):bookNo(s.bookNo),units_sold(s.units_sold),revenue(s.revenue){
+        cout<<"copy construct"<<endl;
+    }
 
     Sales_data& operator=(const string&);
     Sales_data& operator+=(const Sales_data&);
