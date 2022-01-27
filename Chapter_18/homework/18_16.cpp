@@ -8,7 +8,7 @@ namespace Exercise{
 int ivar = 0;
 // int iv =0;
 // int iv = 0;
-// using Exercise::ivar;	//1
+using Exercise::ivar;	//1
 using Exercise::dvar;
 using Exercise::limit;
 
