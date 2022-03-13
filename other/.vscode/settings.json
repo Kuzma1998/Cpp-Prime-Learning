@@ -1,0 +1,22 @@
+{
+    "files.associations": {
+        "*.m": "matlab",
+        "utility": "cpp",
+        "algorithm": "cpp",
+        "xstring": "cpp",
+        "iostream": "cpp",
+        "ostream": "cpp",
+        "vector": "cpp",
+        "deque": "cpp",
+        "list": "cpp",
+        "initializer_list": "cpp",
+        "queue": "cpp",
+        "stack": "cpp",
+        "type_traits": "cpp",
+        "xhash": "cpp",
+        "xutility": "cpp",
+        "unordered_map": "cpp",
+        "set": "cpp",
+        "xstddef": "cpp"
+    }
+}

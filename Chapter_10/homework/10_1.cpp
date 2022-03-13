@@ -1,6 +1,6 @@
 /*
- * @Description: 
- * @code: 
+ * @Description:
+ * @code:
  * @Author: Li Jiaxin
  * @Date: 2021-12-07 19:55:00
  */
@@ -13,9 +13,18 @@
 #include <algorithm>
 using namespace std;
 
+
+// bool cmp(int a,int b) { return a<b;}
+
+
 int main()
 {
     vector<int> v = {1, 2, 3, 1, 1, 1};
-    int times = count(v.begin(), v.end(), 1);
-    cout << times << endl;
+    // int times = count(v.begin(), v.end(), 1);
+    // sort(v.begin(), v.end(), [](int a,int b)
+    //      { return a<b; });
+    sort(v.begin(), v.end(),cmp);
+    for (auto num : v)
+        cout << num << ' ' << endl;
+    // cout << times << endl;
 }
