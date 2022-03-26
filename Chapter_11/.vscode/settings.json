@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "*.m": "matlab",
+        "algorithm": "cpp",
+        "xstring": "cpp",
+        "iostream": "cpp",
+        "set": "cpp",
+        "xtree": "cpp"
+    }
+}
